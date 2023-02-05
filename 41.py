@@ -1,0 +1,1 @@
+print("A") if True else print("B")

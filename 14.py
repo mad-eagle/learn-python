@@ -1,0 +1,33 @@
+def day():
+    a = int(input("Enter number 1 - 7 : "))
+    if a==1: print("Sunday")
+    elif a==2: print("Monday")
+    elif a==3: print("Tuesday")
+    elif a==4 : print("Wednesday")
+    elif a==5: print("Thursday")
+    elif a==6: print("Friday")
+    elif a==7: print("Saturday")
+    else : print("Invalid Input","Give Input 1 - 7")
+
+def month():
+    a = int(input("Enter number 1 - 12 : "))
+    if a==1: print("January")
+    elif a==2: print("February")
+    elif a==3: print("March")
+    elif a==4: print("April")
+    elif a==5: print("May")
+    elif a==6: print("June")
+    elif a==7: print("July")
+    elif a==7: print("August")
+    elif a==7: print("September")
+    elif a==7: print("October")
+    elif a==7: print("November")
+    elif a==7: print("December")
+    else : print("Invalid Input","Give Input 1 - 7")
+
+print("day or month")
+a = int(input("Enter input , for day enter 1 for month enter 2 : "))
+
+if a==1: day()
+elif a==2: month()
+else: print("Invalid Input")
