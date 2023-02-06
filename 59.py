@@ -1,8 +1,8 @@
 # Decorator function
 def modify(fx):
-    def mfx(*args,**kwargs):
+    def mfx(*args):
         print("Start executing the function...")
-        fx(*args,**kwargs)
+        fx(*args)
         print("Done execution the function...")
     return mfx
 
@@ -22,4 +22,11 @@ def fun2():
 
 # Accepting argunents
 #################################################
-def
+@modify
+def add(*args):
+    value = 0
+    for i in args:
+        value += i
+    print(f"Addition of values : {value}")
+
+add(1,2,3,4,5)
